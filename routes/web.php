@@ -10,6 +10,6 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::post("/home", function () {
-    return
+Route::get("/home", function () { // change this to a POST function when u fix the login/register
+    return view('home');
 });
