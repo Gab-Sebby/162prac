@@ -1,15 +1,14 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('register');
-});
-
-Route::get('/login', function () {
     return view('login');
 });
 
-Route::get("/home", function () { // change this to a POST function when u fix the login/register
-    return view('home');
+Route::get('/register', function () {
+    return view('Register');
 });
+
+Route::post("/home", [UserController::class, "Log_in"]); // first term is our controller, second is our function (named home in the UserController.php file)

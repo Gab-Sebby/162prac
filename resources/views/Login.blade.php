@@ -2,7 +2,7 @@
 <html>
     <html lang="en">
     <head>
-        <title>162 Project</title>
+        <title>Login</title>
         <!-- Note that this is html, but everything in style isn't -->
         <meta 
             charset="UTF-8"
@@ -45,13 +45,16 @@
             <div class="box">
                 <h1>Log in</h1>
                     <form action="/home" method=POST> <!-- PUT THE FORM STYLE IN. THE. HEAD!!! -->
+                        @csrf
                         <text>Username:</text> <!-- fix the formatting of these ones -->
-                            <input type="text"> <br>
+                            <input name="usern" type="text"> <br>
                         <text>Password:</text>
-                                <input type="password">
+                                <input name= "passw" type="password"> <br>
+                        <button> Log in </button>
                     </form>
-                <button> Log in </button>
-                <text> or create an account </text> <button> here </button>
+                    <form action="/register" method=GET> <!-- fix this button it's not working -->
+                        <text> or create an account </text> <button> here </button>
+                    </form>
             </div>
         </div>
     </body>

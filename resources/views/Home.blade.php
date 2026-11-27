@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home</title>
     <style>
         body {
             margin: 0;
@@ -38,9 +38,11 @@
 </head>
 <body>
     <ul>
-        <li> <a href="#logout"> Logout</a></li>
-        <li> <a href="#Profile"> My Profile</a></li>
-        <li> <a href="Appointments"> My Appointments</a></li>
+        <form action="/" method=GET>
+            <li> <a href="#logout"> Logout</a></li>
+        </form> <!-- fix this w/ JS-->
+            <li> <a href="#Profile"> My Profile</a></li>
+            <li> <a href="Appointments"> My Appointments</a></li>
     </ul>
     <div class="container">
         <h1> 
